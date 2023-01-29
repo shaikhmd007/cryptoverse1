@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+nav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* overflow-x: hidden; */
+  padding: 20px;
+  background-color: #001529
+}
+
+nav>h4 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  /* padding: 20px; */
+  /* border: 2px solid green; */
+}
+
+li {
+  margin: 25px 0;
+  list-style: none;
+  /* text-align: left; */
+  /* align-items: left; */
+}
+
+nav>ul>li:hover {
+  background-color: #1483e7;
+  width: 80%;
+  cursor: pointer;
+  color: #fff;
+}
+
+section,
+.Routes {
+  margin-left: 85px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.title {
+  grid-area: header;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas:
+    'header header header';
+  gap: 10px;
+  background-color: #edf7ff;
+  padding: 10px;
+  /* grid-template-columns: repeat(auto-fill); */
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* text-align: c; */
+  padding: 10px 5px;
+  /* width: fit-content; */
+  /* font-size: 25px; */
+}
+
+.title {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.title>.button {
+  border: none;
+  background: none;
+  color: rgb(0, 98, 255);
+  cursor: pointer;
+}
+
+.Cards-wrapper {
+  display: inline-flex;
+  padding: 10px;
+  /* gap: 20px; */
+  padding: 1rem 1rem 0 1rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  /* border: 2px solid black; */
+}
+
+.crypto-cards {
+  background-color: #edf7ff;
+  width: 205px;
+  padding: 20px 10px;
+  border: none;
+  color: #000;
+}
+
+.crypto-cards>span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.crypto-cards>h6 {
+  padding-top: 1rem;
+}
+
+.crypto-cards:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  /* overflow: none; */
+}
+
+/* Media Query Screen */
+@media screen and (max-width:780px) {
+  nav {
+    width: 20%;
+  }
+
+  section {
+    width: auto;
+
+  }
+}
+
+@media screen and (max-width:440px) {
+  nav {
+    width: 25%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  section {
+    width: 100%;
+  }
+}
